@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#header{
+			height: 10%;
+			width:100%;
+			font-family:Arial, Helvertica, sans-serif;
+					background-color: #000;
+		}
+		.qr{
+	color:#fff;
+}
+		ul,ol{
+			list-style: none;
+		}
+		.nav img{
+			width:5%;
+			height:5%;
+
+		}
+		.nav >li{
+			text-align: center;	
+			float: right;	
+		}
+		.nav li a{
+			background-color: #000;
+			color:#fff;
+			text-decoration: none;
+			padding: 20px 60px;
+			display: block;
+			
+		}
+		.nav li a:hover{
+			background-color:#434343;
+		}
+
+		
+		.nav li ul{
+			display: none;
+			position: absolute;
+			min-width: 130px;
+			min-height: 30px;
+		}
+		.nav li:hover>ul{
+			display: block;
+		}
+
+
+
+p {
+  font: 22pt sans-serif;
+  margin: 20px 20px 0px 20px;
+}
+
+/**
+* Styles for the puzzle
+*/
+#puzzle {
+    padding: 20px;
+ margin: 50px 400px;
+  right: 0px;
+  
+}
+
+#puzzle div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* style for each square in the puzzle */
+#puzzle .puzzleSquare {
+  height: 50px;
+  width: 50px;
+  text-transform: uppercase;
+  background-color: white;
+  
+  font: 1em sans-serif;
+}
+
+button::-moz-focus-inner {
+
+  border: 0;
+}
+
+/* indicates when a square has been selected */
+#puzzle .selected {
+  background-color: orange;
+}
+
+/* indicates that the square is part of a word that has been found */ 
+#puzzle .found {
+  background-color: #434343;
+  color: white;
+}
+
+#puzzle .solved {
+  background-color: #434343;
+  color: white;
+}
+
+/* indicates that all words have been found */
+#puzzle .complete {
+  background-color: green;
+}
+
+/**
+* Styles for the word list
+*/
+
+#words {
+
+	background-color:  #000;
+	color: #fff;
+  padding-top: 100px;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  width: 100%;
+  float: left;
+}
+
+#words ul {
+
+  list-style-type: none;
+}
+
+#words li {
+  padding: 3px 0;
+  font: 1em sans-serif;
+}
+
+/* indicates that the word has been found */
+#words .wordFound {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/**
+* Styles for the button
+*/
+#solve {
+  
+}
+
+
+
+
+
+
+
+		

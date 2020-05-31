@@ -1,0 +1,72 @@
+
+*{margin: 0;
+padding: 0;}
+
+
+
+		#header{
+			height: 10%;
+			width:100%;
+			font-family:Arial, Helvertica, sans-serif;
+					background-color: #000;
+		}
+		.qr{
+	color:#fff;
+}
+		ul,ol{
+			list-style: none;
+		}
+		.nav img{
+			width:5%;
+			height:5%;
+
+		}
+		.nav >li{
+			text-align: center;	
+			float: right;	
+		}
+		.nav li a{
+			background-color: #000;
+			color:#fff;
+			text-decoration: none;
+			padding: 20px 60px;
+			display: block;
+			
+		}
+		.nav li a:hover{
+			background-color:#434343;
+		}
+
+		
+		.nav li ul{
+			display: none;
+			position: absolute;
+			min-width: 130px;
+		}
+		.nav li:hover>ul{
+			display: block;
+		}
+
+div#memory_board{
+	background:#CCC;
+	border:#999 1px solid;
+	width:100%;
+	height:540px;
+	padding:24px;
+	margin:0px auto;
+}
+div#memory_board > div{
+	background-image: url(../img/tarjeta.png) ;
+	background-repeat: no-repeat;
+	border:#000 1px solid;
+	width: 80px;
+	height: 120px;
+	float:left;
+	margin:10px;
+	padding:20px;
+	font-size:64px;
+	cursor:pointer;
+	text-align:center;
+}
+div#memory_board > div:hover{
+			box-shadow:7px 5px 5px; }

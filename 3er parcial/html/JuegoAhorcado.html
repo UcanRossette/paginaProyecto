@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/ahorcado.css">
+      
+        <title>Juego del ahorcado</title>
+        </head>
+    <body>
+
+
+    <div id="header"><ul class="nav">
+        <center><h1><p class="qr"> Quintana Roo </p> </h1></center>
+<img src="../img/quintana_roo.png">
+<li><a href="../Index.html">Inicio</a></li>
+<li><a href="">Juegos</a>
+<ul>
+    <li><a href="../html/memorama.html">memorama</a></li>
+    <li><a href="../html/sopa_letras.html">Sopa de Letras</a></li>
+    <li><a href="../html/JuegoAhorcado.html">Ahorcado de Chetumal</a></li>
+    <li><a href="../html/rompe_cabezas.html">Rompecabezas</a></li>
+</ul>
+</li>
+<li><a href="../html/chat.html">Chat</a></li> 
+</ul></div>
+
+<div id="centro">
+
+        <h1>Ahorcado de Quintana Roo</h1>
+        <canvas id="pantalla" width="960px" height="450px"> <!-- etiqueta del canvas con sus medidas en la pantalla -->
+            Tu navegador no soporta Canvas.
+        </canvas>
+        <!-- El boton que nos sirve para recargar la pagina y asi generar una nueva palabra y volver a jugar -->
+        <button id="boton" type="reset" onclick="javascript:window.location.reload();">Volver a Jugar</button>
+       </div>
+    </body>
+    <script type="text/javascript" src="../js/ahorcado.js"></script>
+</html>

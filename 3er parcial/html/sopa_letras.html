@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sopa de Letras</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+
+	
+	
+	 <div id="header"><ul class="nav">
+    <center><h1><p class="qr"> Quintana Roo </p> </h1></center>
+<img src="../img/quintana_roo.png">
+<li><a href="../Index.html">Inicio</a></li>
+<li><a href="">Juegos</a>
+<ul>
+    <li><a href="../html/memorama.html">memorama</a></li>
+    <li><a href="../html/sopa_letras.html">Sopa de Letras</a></li>
+    <li><a href="../html/JuegoAhorcado.html">Ahorcado de Chetumal</a></li>
+    <li><a href="../html/rompe_cabezas.html">Rompecabezas</a></li>
+</ul>
+</li>
+<li><a href="../html/chat.html">Chat</a></li> 
+</ul></div>
+
+
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+<script type="text/javascript" src="../js/wordfind.js"></script> 
+<script type="text/javascript" src="../js/wordfindgame.js"></script> 
+<div id='puzzle'></div>
+<div id='words'></div>
+<button id='solve'>Resolver</button>
+<button type="button" id="Nuevo"><a href="">Nuevo</a></button>
+<script>
+ var words = ['CHETUMAL','PLAYAS','XCARET','TULUM','COZUMEL','BACALAR','MORELOS','ARENA',];
+  var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');
+  $('#solve').click( function() {wordfindgame.solve(gamePuzzle, words);});
+  var puzzle = wordfind.newPuzzle(words,{height: 18, width:18, fillBlanks: false});
+  wordfind.print(puzzle);
+</script>
+</body>
+</html>
